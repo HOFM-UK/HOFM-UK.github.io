@@ -1,0 +1,916 @@
+<html><head>
+	<title>The Anna Edit</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript" src="https://bam.nr-data.net/1/37d2807496?a=4851522&amp;v=1016.8b58850&amp;to=ZFxbZURZV0MDU0RZDF0WbENfF05AT1leVAZLFEtUUlFKHhJYQA%3D%3D&amp;rst=1036&amp;ref=http://www.theannaedit.com/&amp;be=90&amp;fe=917&amp;dc=103&amp;perf=%7B%22timing%22:%7B%22of%22:1485350042445,%22n%22:0,%22f%22:0,%22dn%22:9,%22dne%22:30,%22c%22:30,%22ce%22:33,%22rq%22:33,%22rp%22:82,%22rpe%22:83,%22dl%22:83,%22di%22:195,%22ds%22:195,%22de%22:246,%22dc%22:1008,%22l%22:1009,%22le%22:1012%7D,%22navigation%22:%7B%7D%7D&amp;at=SBtYEwxDRE0%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1016.min.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="p:domain_verify" content="c16636733bea10ff981eb2a8b26018b3">
+	
+    <link rel="pingback" href="http://www.theannaedit.com/xmlrpc.php">
+
+    
+    <link rel="dns-prefetch" href="//s0.wp.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="The Anna Edit » Feed" href="http://www.theannaedit.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="The Anna Edit » Comments Feed" href="http://www.theannaedit.com/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.theannaedit.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="http://www.theannaedit.com/wp-includes/js/wp-emoji-release.min.js?ver=4.6.1" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="bootstrap-css" href="http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/css/bootstrap.min.css?ver=4.6.1" type="text/css" media="all">
+<link rel="stylesheet" id="fontawsome-css" href="http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/css/font-awesome.min.css?ver=4.6.1" type="text/css" media="all">
+<link rel="stylesheet" id="slick-carousel-css" href="http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/js/slick/slick.css?ver=4.6.1" type="text/css" media="all">
+<link rel="stylesheet" id="wpstickies_css-css" href="http://www.theannaedit.com/wp-content/plugins/wpStickies/css/wpstickies.css?ver=2.1.4" type="text/css" media="all">
+<link rel="stylesheet" id="wordpress-popular-posts-css" href="http://www.theannaedit.com/wp-content/plugins/wordpress-popular-posts/style/wpp.css?ver=3.3.4" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-styles-css" href="http://www.theannaedit.com/wp-content/plugins/font-awesome/assets/css/font-awesome.min.css?ver=3.2.1" type="text/css" media="all">
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='font-awesome-ie7-css'  href='http://www.theannaedit.com/wp-content/plugins/font-awesome/assets/css/font-awesome-ie7.min.css?ver=3.2.1' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="jetpack_css-css" href="http://www.theannaedit.com/wp-content/plugins/jetpack/css/jetpack.css?ver=4.3.2" type="text/css" media="all">
+<script type="text/javascript" src="http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/js/jquery-1.11.3.min.js?ver=4.6.1"></script>
+<script type="text/javascript" src="http://www.theannaedit.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/js/html5shiv.js?ver=4.6.1'></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/js/respond.min.js?ver=4.6.1'></script>
+<![endif]-->
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPStickies = {"ajaxurl":"http:\/\/www.theannaedit.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.theannaedit.com/wp-content/plugins/wpStickies/js/wpstickies.kreaturamedia.jquery.js?ver=2.1.4"></script>
+<script type="text/javascript" src="http://www.theannaedit.com/wp-content/plugins/wpStickies/js/jquery-easing-1.3.js?ver=1.3.0"></script>
+<link rel="https://api.w.org/" href="http://www.theannaedit.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.theannaedit.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.theannaedit.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.6.1">
+<link rel="shortlink" href="http://wp.me/3pkSR">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-83350068-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript">var wpsjQuery = jQuery;</script><script type="text/javascript"> wpsjQuery(document).ready(function() { wpsjQuery('.instagram-image').wpStickies({"settings":{"role":"non-user","allowToCreate":false,"allowToModify":true,"showMessages":false,"alwaysVisible":true,"imageMinWidth":150,"imageMinHeight":150},"position":{"spotBubbleDirection":"bottom","autoChangeDirection":true,"spotBubbleDistance":2,"areaMinWidth":25,"areaMinHeight":25,"spotButtonsPosition":"left"},"animation":{"directionIn":"bottom","directionOut":"fade","easingIn":"easeOutQuart","easingOut":"easeInBack","durationIn":500,"durationOut":250,"spotBubbleEasing":"easeOutBack","spotBubbleDuration":200,"delay":30},"language":{"areaCaption":"add a name or caption","spotTitle":"Sample Title","spotContent":"You can write here text and you can also use HTML code. For example you can simply include an image or a link.","btnGoogle":"Google","btnYouTube":"YouTube","btnVimeo":"Vimeo","btnWikipedia":"Wikipedia","btnFacebook":"Facebook","msgOver":"wpStickies: Click on the image to create a new spot or draw an area to tag faces.","msgDragSpot":"wpStickies: You can drag this sticky anywhere over the image by taking and moving the spot.","msgDragArea":"wpStickies: You can drag this sticky anywhere over the image by taking and moving the area.","msgBtnSave":"wpStickies: SAVE CHANGES","msgBtnRemove":"wpStickies: REMOVE THIS STICKY","msgBtnReposition":"wpStickies: CHANGE THE DIRECTION OF THE BUBBLE","msgBtnColor":"wpStickies: CHANGE THE COLOR OF THE BUBBLE","msgBtnSize":"wpStickies: CHANGE THE WIDTH OF THE BUBBLE","msgSave":"wpStickies: STICKY SAVED","msgRemove":"wpStickies: STICKY REMOVED","confRemove":"wpStickies: You clicked to remove this sticky. If you confirm, it will be permanently removed from the database. Are you sure?","msgDisabled":"Disable wpStickies on this image"}}); }); </script>
+<link rel="dns-prefetch" href="//v0.wordpress.com">
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Anna Edit">
+<meta property="og:url" content="http://www.theannaedit.com/">
+<meta property="og:site_name" content="The Anna Edit">
+<meta property="og:image" content="http://www.theannaedit.com/wp-content/uploads/2016/08/cropped-favicon.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:locale" content="en_US">
+<link rel="icon" href="http://www.theannaedit.com/wp-content/uploads/2016/08/cropped-favicon-150x150.png" sizes="32x32">
+<link rel="icon" href="http://www.theannaedit.com/wp-content/uploads/2016/08/cropped-favicon-300x300.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="http://www.theannaedit.com/wp-content/uploads/2016/08/cropped-favicon-300x300.png">
+<meta name="msapplication-TileImage" content="http://www.theannaedit.com/wp-content/uploads/2016/08/cropped-favicon-300x300.png">
+
+<!--Plugin WP Missed Schedule Active - Secured with Genuine Authenticity KeyTag-->
+
+<!-- This site is patched against a big problem not solved since WordPress 2.5 -->
+
+
+	<link rel="stylesheet" href="http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/style.css" type="text/css">
+<script async="" type="text/javascript" src="//viviannadoesmakeup.disqus.com/count.js"></script></head>
+
+<body class="home blog">
+	<div class="body-overlay"></div>
+
+    <div class="tablet-menu-wrapper">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        
+                        <ul id="main-menu-1-tablet" class="tablet-menu"><li id="menu-item-19606" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-19606 current-menu-item"><a href="http://www.theannaedit.com/">Latest</a></li>
+<li id="menu-item-19629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19629"><a href="http://www.theannaedit.com/popular/">Popular</a></li>
+<li id="menu-item-19625" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19625"><a href="http://www.theannaedit.com/category/beauty/">Beauty</a></li>
+<li id="menu-item-19628" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19628"><a href="http://www.theannaedit.com/category/style/">Style</a></li>
+<li id="menu-item-19627" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19627"><a href="http://www.theannaedit.com/category/life/">Life</a></li>
+<li id="menu-item-19626" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19626"><a href="http://www.theannaedit.com/category/fitness/">Fitness</a></li>
+<li id="menu-item-19630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19630"><a href="http://www.theannaedit.com/shop/">SHOP</a></li>
+<li id="menu-item-19631" class="btn-search hidden-xs hidden-sm menu-item menu-item-type-custom menu-item-object-custom menu-item-19631"><a href="#">Search</a></li>
+</ul>                        
+                        <div class="separator"></div>
+
+                        <ul id="main-menu-2-tablet" class="tablet-menu"><li id="menu-item-19632" class="go-top hidden-xs hidden-sm menu-item menu-item-type-custom menu-item-object-custom menu-item-19632"><a href="#"><span class="icon-arrow_up"></span> Back to the top</a></li>
+<li id="menu-item-19636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19636"><a href="http://www.theannaedit.com/about/">About</a></li>
+<li id="menu-item-19633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19633"><a href="http://www.theannaedit.com/shop/">SHOP</a></li>
+<li id="menu-item-19635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19635"><a href="http://www.theannaedit.com/contact/">Contact</a></li>
+<li id="menu-item-19634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19634"><a href="http://www.theannaedit.com/disclaimer/">Disclaimer</a></li>
+<li id="menu-item-19637" class="go-top visible-xs menu-item menu-item-type-custom menu-item-object-custom menu-item-19637"><a href="#"><span class="icon-arrow_up"></span> Back to the top</a></li>
+</ul>                        
+                        <div class="separator"></div>
+
+                        <ul id="socialmedia-menu-tablet" class="socialmedia-menu"><li id="menu-item-19645" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19645"><a href="http://www.youtube.com/theannaedit"><span class="icon-i_youtube_2"></span> Youtube</a></li>
+<li id="menu-item-19646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19646"><a href="https://www.snapchat.com/add/theannaedit"><span class="icon-i_snapchat"></span> Snapchat</a></li>
+<li id="menu-item-19647" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19647"><a href="https://www.instagram.com/theannaedit/"><span class="icon-i_instagram"></span> Instagram</a></li>
+<li id="menu-item-19648" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19648"><a href="https://www.facebook.com/theannaedit"><span class="icon-i_facebook"></span> Facebook</a></li>
+<li id="menu-item-19649" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19649"><a href="https://twitter.com/theannaedit"><span class="icon-i_twitter"></span> Twitter</a></li>
+<li id="menu-item-19650" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19650"><a href="https://pinterest.com/theannaedit/"><span class="icon-i_pinterest"></span> Pinterest</a></li>
+<li id="menu-item-19651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19651"><a href="https://www.bloglovin.com/blogs/vivianna-does-makeup-1775978"><span class="icon-i_bloglovin"></span> Bloglovin</a></li>
+</ul>                    </div>
+
+                </div>
+            </div>
+            <!-- /.wrapper -->
+        </div>
+    </div>
+    <!-- /.tablet-menu -->
+
+
+    <div class="mobile-follow-me">
+
+        <div class="wrapper">
+            <ul id="socialmedia-menu-mobile" class="socialmedia-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19645"><a href="http://www.youtube.com/theannaedit"><span class="icon-i_youtube_2"></span> Youtube</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19646"><a href="https://www.snapchat.com/add/theannaedit"><span class="icon-i_snapchat"></span> Snapchat</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19647"><a href="https://www.instagram.com/theannaedit/"><span class="icon-i_instagram"></span> Instagram</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19648"><a href="https://www.facebook.com/theannaedit"><span class="icon-i_facebook"></span> Facebook</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19649"><a href="https://twitter.com/theannaedit"><span class="icon-i_twitter"></span> Twitter</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19650"><a href="https://pinterest.com/theannaedit/"><span class="icon-i_pinterest"></span> Pinterest</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19651"><a href="https://www.bloglovin.com/blogs/vivianna-does-makeup-1775978"><span class="icon-i_bloglovin"></span> Bloglovin</a></li>
+</ul>
+            <a href="#" class="btn-follow-me-close"><span class="icon-arrow_up"></span> Close</a>
+        </div>
+        <!-- /.wrapper -->
+    </div>
+    <!-- /.mobile-follow-me -->
+
+        <section id="header" class="clearfix hidden-sm hidden-xs no-border">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"><a href="http://www.theannaedit.com/" class="logo"><img src="http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/img/tae_logo.svg" width="146" height="29" alt=""></a></div>
+                <div class="col-sm-9">
+                    <ul id="main-menu-desktop" class="top-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-19606 current-menu-item"><a href="http://www.theannaedit.com/">Latest</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19629"><a href="http://www.theannaedit.com/popular/">Popular</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19625"><a href="http://www.theannaedit.com/category/beauty/">Beauty</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19628"><a href="http://www.theannaedit.com/category/style/">Style</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19627"><a href="http://www.theannaedit.com/category/life/">Life</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19626"><a href="http://www.theannaedit.com/category/fitness/">Fitness</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19630"><a href="http://www.theannaedit.com/shop/">SHOP</a></li>
+<li class="btn-search hidden-xs hidden-sm menu-item menu-item-type-custom menu-item-object-custom menu-item-19631"><a href="#">Search</a></li>
+<li id="magic-line" style="width: 45px; left: 470.498px;"></li></ul>                    
+                    <div class="search-wrapper">
+                        <form action="http://www.theannaedit.com" id="searchform" method="get">
+                            <input type="text" id="s" name="s" value="" placeholder="Search The Anna Edit">
+                            <input type="submit" value="Search" id="searchsubmit">
+                            <button id="btn-search-close" class="hamburger hamburger--spring" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                                <span class="hamburger-label"></span>
+                            </button>
+                        </form>
+                    </div>
+                    <!-- /.search-wrapper -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #header ends -->
+
+
+    <section id="header-tablet" class="clearfix overflow visible-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"><a href="http://www.theannaedit.com/" class="logo"><img src="http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/img/tae_logo.svg" width="146" height="29" alt=""></a></div>
+                <div class="col-sm-9">
+                    <ul class="top-menu">
+                        <li class="btn-menu"><a href="#">Menu</a></li>
+                        <li class="btn-search"><a href="#">Search</a></li>
+                    </ul>
+                    <!-- /.top-menu -->
+                </div>
+            </div>
+        </div>
+
+        <div class="search-wrapper-parent clearfix overflow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 relative">
+                        <div class="search-wrapper clearfix">
+                            <form action="http://www.theannaedit.com" id="searchform" method="get">
+                                <input type="text" id="s" name="s" value="" placeholder="Search The Anna Edit">
+                                <input type="submit" value="Search" id="searchsubmit">
+                                <button id="btn-search-close" class="hamburger hamburger--spring is-active" type="button">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                    <span class="hamburger-label"></span>
+                                </button>
+                            </form>
+                        </div>
+                        <!-- /.search-wrapper -->
+                    </div>
+                </div>
+            </div>
+                        
+        </div>
+        <!-- /.search-wrapper-parent -->
+    </section>
+    <!-- /#header-tablet ends -->
+
+
+    <section id="header-mobile" class="clearfix overflow visible-xs">
+        <div class="the-header clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="wrapper">
+                            <div class="row">
+                                <div class="col-xs-6"><a href="http://www.theannaedit.com/" class="logo"><img src="http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/img/tae_logo.svg" width="118" height="24" alt=""></a></div>
+                                <div class="col-xs-6">
+
+                                
+                                    <button class="btn-menu hamburger hamburger--spring" type="button">
+                                        <span class="hamburger-box">
+                                            <span class="hamburger-inner"></span>
+                                        </span>
+                                        <span class="hamburger-label"></span>
+                                    </button>
+                                
+                                                                </div>
+                            </div>
+                        </div>
+                        <!-- /.wrapper -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.the-header -->
+
+        <div class="mobile-menu-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form action="http://www.theannaedit.com" id="searchform" method="get">
+                            <input type="text" id="s" name="s" value="" placeholder="Search The Anna Edit">
+                            <input type="submit" value="Search" id="searchsubmit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <ul id="main-menu-1-mobile" class="mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-19606 current-menu-item"><a href="http://www.theannaedit.com/">Latest</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19629"><a href="http://www.theannaedit.com/popular/">Popular</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19625"><a href="http://www.theannaedit.com/category/beauty/">Beauty</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19628"><a href="http://www.theannaedit.com/category/style/">Style</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19627"><a href="http://www.theannaedit.com/category/life/">Life</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19626"><a href="http://www.theannaedit.com/category/fitness/">Fitness</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19630"><a href="http://www.theannaedit.com/shop/">SHOP</a></li>
+<li class="btn-search hidden-xs hidden-sm menu-item menu-item-type-custom menu-item-object-custom menu-item-19631"><a href="#">Search</a></li>
+</ul>            
+            <div class="separator"></div>
+
+            <ul id="main-menu-2-mobile" class="mobile-menu"><li class="go-top hidden-xs hidden-sm menu-item menu-item-type-custom menu-item-object-custom menu-item-19632"><a href="#"><span class="icon-arrow_up"></span> Back to the top</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19636"><a href="http://www.theannaedit.com/about/">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19633"><a href="http://www.theannaedit.com/shop/">SHOP</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19635"><a href="http://www.theannaedit.com/contact/">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19634"><a href="http://www.theannaedit.com/disclaimer/">Disclaimer</a></li>
+<li class="go-top visible-xs menu-item menu-item-type-custom menu-item-object-custom menu-item-19637"><a href="#"><span class="icon-arrow_up"></span> Back to the top</a></li>
+</ul>            
+            <div class="separator"></div>
+
+            <ul id="socialmedia-menu-mobile" class="socialmedia-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19645"><a href="http://www.youtube.com/theannaedit"><span class="icon-i_youtube_2"></span> Youtube</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19646"><a href="https://www.snapchat.com/add/theannaedit"><span class="icon-i_snapchat"></span> Snapchat</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19647"><a href="https://www.instagram.com/theannaedit/"><span class="icon-i_instagram"></span> Instagram</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19648"><a href="https://www.facebook.com/theannaedit"><span class="icon-i_facebook"></span> Facebook</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19649"><a href="https://twitter.com/theannaedit"><span class="icon-i_twitter"></span> Twitter</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19650"><a href="https://pinterest.com/theannaedit/"><span class="icon-i_pinterest"></span> Pinterest</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19651"><a href="https://www.bloglovin.com/blogs/vivianna-does-makeup-1775978"><span class="icon-i_bloglovin"></span> Bloglovin</a></li>
+</ul>        </div>
+        <!-- /.mobile-menu-wrapper -->
+
+
+        <div class="mobile-share-wrapper">
+
+            <ul>
+                <li class="the-label"><span class="icon-i_share"></span> <span class="the-text">Share this post</span></li>
+                <li class="visible-xs"><a href="whatsapp://send?text=http%3A%2F%2Fwww.theannaedit.com%2Fthe-glow-giving-skincare-edit%2F" data-action="share/whatsapp/share"><span class="icon-i_share_whatsapp"></span> <span class="the-text text_whatsapp">Whatsapp</span></a></li>
+                <li class="visible-xs"><a href="mailto:?subject=The Glow-Giving Skincare Edit&amp;body=http://www.theannaedit.com/the-glow-giving-skincare-edit/"><span class="icon-i_share_email"></span> <span class="the-text text_email">Email</span></a></li>
+                <li><a target="_blank" href="javascript:window.open('http://www.facebook.com/sharer.php?u=http://www.theannaedit.com/the-glow-giving-skincare-edit/&amp;t=The Glow-Giving Skincare Edit', 'facebook_share', 'height=320, width=640, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');"><span class="icon-i_share_facebook"></span> <span class="the-text text_facebook">Facebook</span></a></li>
+                <li><a target="_blank" href="javascript:window.open('http://twitter.com/share?text=Currently reading The Glow-Giving Skincare Edit&amp;url=http://www.theannaedit.com/the-glow-giving-skincare-edit/', 'twitter_share', 'height=320, width=640, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');"><span class="icon-i_share_twitter"></span> <span class="the-text text_twitter">Twitter</span></a></li>
+                <li><a target="_blank" href="javascript:window.open('https://pinterest.com/pin/create/button/?url=http://www.theannaedit.com/the-glow-giving-skincare-edit/&amp;description=The Glow-Giving Skincare Edit', 'pinterest', 'height=320, width=640, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');"><span class="icon-i_share_pinterest"></span> <span class="the-text text_pinterest">Pinterest</span></a></li>
+                <li><a target="_blank" href="javascript:window.open('http://www.tumblr.com/share/link?url=http%3A%2F%2Fwww.theannaedit.com%2Fthe-glow-giving-skincare-edit%2F', 'tumblr', 'height=320, width=640, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');"><span class="icon-i_share_tumblr"></span> <span class="the-text text_tumblr">Tumblr</span></a></li>
+            </ul>
+            <!-- /.socialmedia-menu -->
+        </div>
+        <!-- /.mobile-share-wrapper -->
+
+    </section>
+    <!-- /#header-mobile ends -->
+           
+     
+
+    <section id="posts" class="clearfix overflow posts-listing">
+        <div class="container">
+
+        
+                            <div class="row">
+                <div class="col-md-8">
+                    <a href="http://www.theannaedit.com/the-glow-giving-skincare-edit/" class="the-post big text-center">
+                        <span class="post-thumb-wrapper">
+                                                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/theannaedit-glowy-skin-skincare-oskia-caroline-hirons-pixi-kiehls-january-2017-1-1416x952.jpg" alt="" class="post-thumb">
+
+                                                        <span class="post-category">Beauty</span>
+                            <span class="caption">
+                                <span class="the-btn">View Post</span>
+                            </span>
+                        </span>
+                        <span class="post-data">
+                            <span class="post-date">January 25, 2017</span>
+                            <span class="post-title">The Glow-Giving Skincare Edit</span>
+                        </span>
+                    </a>
+                    <!-- /.the-post -->
+                </div>
+                <div class="col-md-4">
+                    <div class="home-top-sidebar clearfix">
+                        <div id="text-9" class="widget-1 widget-first widget-odd about-box the-widget widget_text"><div class="widget-content">			<div class="textwidget"><img src="http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/img/author-thumb.jpg" alt="" class="about-thumb">
+<h2>Hi, I'm Anna.</h2>
+<p>A twenty-something Brighton-dweller with a love for lipstick, lycra and leaf-print homewares. </p>
+<div class="hidden-xs">
+    <ul class="socialmedia-menu">
+        <li><a href="http://www.youtube.com/theannaedit" target="_blank"><span class="icon-i_youtube_1"></span></a></li>
+        <li><a href="https://www.snapchat.com/add/theannaedit" target="_blank"><span class="icon-i_snapchat"></span></a></li>
+        <li><a href="https://www.instagram.com/theannaedit/" target="_blank"><span class="icon-i_instagram"></span></a></li>
+        <li><a href="https://www.facebook.com/theannaedit" target="_blank"><span class="icon-i_facebook"></span></a></li>
+        <li><a href="https://twitter.com/theannaedit" target="_blank"><span class="icon-i_twitter"></span></a></li>
+        <li><a href="https://pinterest.com/theannaedit/" target="_blank"><span class="icon-i_pinterest"></span></a></li>
+        <li><a href="https://www.bloglovin.com/blogs/vivianna-does-makeup-1775978" target="_blank"><span class="icon-i_bloglovin"></span></a></li>
+    </ul>
+    <div class="text-center">
+        <a href="http://www.theannaedit.com/about/" class="btn-lined">More about me</a>
+    </div>
+</div>
+
+<div class="visible-xs">
+    <ul class="buttons">
+        <li><a href="#" class="btn-lined btn-follow-me">Follow me</a></li>
+        <li><a href="http://www.theannaedit.com/about/" class="btn-lined">More about me</a></li>
+    </ul>
+</div></div>
+		</div></div><div id="text-21" class="widget-2 widget-last widget-even the-widget widget_text"><div class="widget-content">			<div class="textwidget"></div>
+		</div></div>                        							
+	<ul class="the-widget shopmyinstagram-widget"><div class="widget-content">	
+	<a href="http://www.theannaedit.com/shop/" class="btn-lined">Shop my instagram</a>					
+						
+<li>
+                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/fullsizeoutput_6ae4-230x230.jpeg" alt="" class="post-thumb">
+</li>
+
+
+<li>
+                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/fullsizeoutput_6ae3-230x230.jpeg" alt="" class="post-thumb">
+</li>
+
+
+<li>
+                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/fullsizeoutput_6ae2-230x230.jpeg" alt="" class="post-thumb">
+</li>
+
+
+<li>
+                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/fullsizeoutput_6ae1-230x230.jpeg" alt="" class="post-thumb">
+</li>
+
+
+<li>
+                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/fullsizeoutput_6ae0-230x230.jpeg" alt="" class="post-thumb">
+</li>
+
+
+<li>
+                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/fullsizeoutput_6adf-230x230.jpeg" alt="" class="post-thumb">
+</li>
+
+ 							
+	</div></ul>							
+	<!-- Shop my instagram END -->
+
+
+						
+							
+                    </div>
+                    <!-- /.home-top-sidebar -->
+                </div>
+            </div>
+            <!-- /.row -->
+                                    
+            
+                        <div class="row">
+                                        <div class="col-sm-6">
+                    <a href="http://www.theannaedit.com/the-bookshelf-tour/" class="the-post medium text-center">
+                        <span class="post-thumb-wrapper">
+                                                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/fullsizeoutput_6b8f-1072x714.jpeg" alt="" class="post-thumb">
+
+                                                        <span class="post-category">Life</span>
+                            <span class="caption">
+                                <span class="the-btn">View Post</span>
+                            </span>
+                        </span>
+                        <span class="post-data">
+                            <span class="post-date">January 24, 2017</span>
+                            <span class="post-title">The Bookshelf Tour</span>
+                        </span>
+                    </a>
+                    <!-- /.the-post -->
+                </div>
+                                                                <div class="col-sm-6">
+                    <a href="http://www.theannaedit.com/my-current-makeup-collection-decluttering-tips/" class="the-post medium text-center">
+                        <span class="post-thumb-wrapper">
+                                                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/theannaedit-makeup-clearout-delcuttering-makeup-collection-january-2017-1-1072x714.jpg" alt="" class="post-thumb">
+
+                                                        <span class="post-category">Beauty</span>
+                            <span class="caption">
+                                <span class="the-btn">View Post</span>
+                            </span>
+                        </span>
+                        <span class="post-data">
+                            <span class="post-date">January 22, 2017</span>
+                            <span class="post-title">My Current Makeup Collection &amp; Decluttering Tips</span>
+                        </span>
+                    </a>
+                    <!-- /.the-post -->
+                </div>
+                                            </div>
+            <!-- /.row -->
+            
+
+            <div id="small-posts" class="row">
+                        
+                <div class="col-sm-4 post-small">
+                    <a href="http://www.theannaedit.com/the-effortless-red-lip-my-top-picks/" class="the-post text-center">
+                        <span class="post-thumb-wrapper">
+                                                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/fullsizeoutput_6701-688x464.jpeg" alt="" class="post-thumb">
+
+                                                        <span class="post-category">Beauty</span>
+                            <span class="caption">
+                                <span class="the-btn">View Post</span>
+                            </span>
+                        </span>
+                        <span class="post-data">
+                            <span class="post-date">January 20, 2017</span>
+                            <span class="post-title">The Effortless Red Lip: My Top Picks</span>
+                        </span>
+                    </a>
+                    <!-- /.the-post -->
+                </div>
+
+                                
+            
+                <div class="col-sm-4 post-small">
+                    <a href="http://www.theannaedit.com/five-workout-videos-you-can-do-at-home/" class="the-post text-center">
+                        <span class="post-thumb-wrapper">
+                                                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/theannaedit-new-year-yoga-fitness-routine-yogawithadrienne-youtube-january-2017-6-688x464.jpg" alt="" class="post-thumb">
+
+                                                        <span class="post-category">Fitness</span>
+                            <span class="caption">
+                                <span class="the-btn">View Post</span>
+                            </span>
+                        </span>
+                        <span class="post-data">
+                            <span class="post-date">January 16, 2017</span>
+                            <span class="post-title">Five Workout Videos You Can Do At Home</span>
+                        </span>
+                    </a>
+                    <!-- /.the-post -->
+                </div>
+
+                                
+            
+                <div class="col-sm-4 post-small">
+                    <a href="http://www.theannaedit.com/my-bag-collection-highstreet-dupes/" class="the-post text-center">
+                        <span class="post-thumb-wrapper">
+                                                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/fullsizeoutput_66fb-688x464.jpeg" alt="" class="post-thumb">
+
+                                                        <span class="post-category">Style</span>
+                            <span class="caption">
+                                <span class="the-btn">View Post</span>
+                            </span>
+                        </span>
+                        <span class="post-data">
+                            <span class="post-date">January 15, 2017</span>
+                            <span class="post-title">My Bag Collection &amp; Highstreet Dupes</span>
+                        </span>
+                    </a>
+                    <!-- /.the-post -->
+                </div>
+
+                                
+            
+                <div class="col-sm-4 post-small">
+                    <a href="http://www.theannaedit.com/what-i-learnt-from-wearing-makeup-every-darn-day/" class="the-post text-center">
+                        <span class="post-thumb-wrapper">
+                                                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/theannaedit-wearing-makeup-more-current-makeup-routine-products-january-2017-5-688x464.jpg" alt="" class="post-thumb">
+
+                                                        <span class="post-category">Beauty</span>
+                            <span class="caption">
+                                <span class="the-btn">View Post</span>
+                            </span>
+                        </span>
+                        <span class="post-data">
+                            <span class="post-date">January 13, 2017</span>
+                            <span class="post-title">What I Learnt from Wearing Makeup Every Darn Day</span>
+                        </span>
+                    </a>
+                    <!-- /.the-post -->
+                </div>
+
+                                
+            
+                <div class="col-sm-4 post-small">
+                    <a href="http://www.theannaedit.com/gentlewoman-style-its-right-up-my-street/" class="the-post text-center">
+                        <span class="post-thumb-wrapper">
+                                                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/theannaedit-outfit-of-the-day-ootd-ysl-bag-reiss-mac-acne-jensen-boots-style-fashion-january-2017-7-688x464.jpg" alt="" class="post-thumb">
+
+                                                        <span class="post-category">Style</span>
+                            <span class="caption">
+                                <span class="the-btn">View Post</span>
+                            </span>
+                        </span>
+                        <span class="post-data">
+                            <span class="post-date">January 11, 2017</span>
+                            <span class="post-title">Gentlewoman Style – It’s Right Up My Street</span>
+                        </span>
+                    </a>
+                    <!-- /.the-post -->
+                </div>
+
+                                
+            
+                <div class="col-sm-4 post-small">
+                    <a href="http://www.theannaedit.com/my-blogging-kit-must-haves/" class="the-post text-center">
+                        <span class="post-thumb-wrapper">
+                                                        <img src="http://www.theannaedit.com/wp-content/uploads/2017/01/fullsizeoutput_66f3-688x464.jpeg" alt="" class="post-thumb">
+
+                                                        <span class="post-category">Life</span>
+                            <span class="caption">
+                                <span class="the-btn">View Post</span>
+                            </span>
+                        </span>
+                        <span class="post-data">
+                            <span class="post-date">January 9, 2017</span>
+                            <span class="post-title">My Blogging Kit Must-Haves</span>
+                        </span>
+                    </a>
+                    <!-- /.the-post -->
+                </div>
+
+                                
+                        </div><div id="pbd-alp-load-posts" class="row load-more-wrapper"><div class="col-sm-12 text-center"><a href="#" class="load-more btn-lined">Load more posts</a></div></div>
+            <!-- /.row -->
+
+
+            
+        </div>
+    </section>
+    <!-- #posts ends -->
+
+    
+    <section id="favourites" class="widget-1 widget-first widget-last widget-odd clearfix overflow">
+                                <div class="widget-1 widget-first widget-last widget-odd container">
+                                    <div class="widget-1 widget-first widget-last widget-odd row">
+                                        <div class="widget-1 widget-first widget-last widget-odd col-sm-12">
+                                            <div class="widget-1 widget-first widget-last widget-odd the-widget"><div class="widget-title text-center">My favourites</div>			<div class="widget-content"><div class="textwidget"><div class="shopthepost-widget" data-widget-id="2223348" data-widget-uid="0"><div id="stp-586bd56bb0b78" class="stp-outer">
+	<a class="stp-control stp-left">&lt;</a>
+	<div class="stp-inner stp-shift" style="width: 593px">
+		<div class="stp-slide" style="left: -000%;">
+						<a href="http://rstyle.me/iA-n/b8zuunt2z6_" target="_blank" rel="nofollow" class="stp-product " data-index="0" style="margin: 0 12px 0 11px">
+				<span class="stp-help"></span>
+				<img src="//images.rewardstyle.com/img?v=2.13&amp;p=n_65784396&amp;max&amp;height=0&amp;width=125" srcset="//images.rewardstyle.com/img?v=2.13&amp;p=n_65784396&amp;max&amp;height=0&amp;width=125 1x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65784396&amp;max&amp;height=0&amp;width=250 2x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65784396&amp;max&amp;height=0&amp;width=375 3x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65784396&amp;max&amp;height=0&amp;width=375 4x">
+							</a>
+						<a href="http://rstyle.me/iA-n/b6wmzst2z6_" target="_blank" rel="nofollow" class="stp-product " data-index="1" style="margin: 0 12px 0 11px">
+				<span class="stp-help"></span>
+				<img src="//images.rewardstyle.com/img?v=2.13&amp;p=n_63581936&amp;max&amp;height=0&amp;width=125" srcset="//images.rewardstyle.com/img?v=2.13&amp;p=n_63581936&amp;max&amp;height=0&amp;width=125 1x, //images.rewardstyle.com/img?v=2.13&amp;p=n_63581936&amp;max&amp;height=0&amp;width=250 2x, //images.rewardstyle.com/img?v=2.13&amp;p=n_63581936&amp;max&amp;height=0&amp;width=375 3x, //images.rewardstyle.com/img?v=2.13&amp;p=n_63581936&amp;max&amp;height=0&amp;width=375 4x">
+							</a>
+						<a href="http://rstyle.me/iA-n/b8zvc5t2z6_" target="_blank" rel="nofollow" class="stp-product " data-index="2" style="margin: 0 12px 0 11px">
+				<span class="stp-help"></span>
+				<img src="//images.rewardstyle.com/img?v=2.13&amp;p=n_65784923&amp;max&amp;height=0&amp;width=125" srcset="//images.rewardstyle.com/img?v=2.13&amp;p=n_65784923&amp;max&amp;height=0&amp;width=125 1x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65784923&amp;max&amp;height=0&amp;width=250 2x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65784923&amp;max&amp;height=0&amp;width=375 3x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65784923&amp;max&amp;height=0&amp;width=375 4x">
+							</a>
+						<a href="http://rstyle.me/iA-n/b8sqpzt2z6_" target="_blank" rel="nofollow" class="stp-product " data-index="3" style="margin: 0 12px 0 11px">
+				<span class="stp-help"></span>
+				<img src="//images.rewardstyle.com/img?v=2.13&amp;p=n_65550775&amp;max&amp;height=0&amp;width=125" srcset="//images.rewardstyle.com/img?v=2.13&amp;p=n_65550775&amp;max&amp;height=0&amp;width=125 1x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65550775&amp;max&amp;height=0&amp;width=250 2x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65550775&amp;max&amp;height=0&amp;width=375 3x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65550775&amp;max&amp;height=0&amp;width=375 4x">
+							</a>
+						<a href="http://rstyle.me/iA-n/b8sna9t2z6_" target="_blank" rel="nofollow" class="stp-product " data-index="4" style="margin: 0 12px 0 11px">
+				<span class="stp-help"></span>
+				<img src="//images.rewardstyle.com/img?v=2.13&amp;p=n_65548319&amp;max&amp;height=0&amp;width=125" srcset="//images.rewardstyle.com/img?v=2.13&amp;p=n_65548319&amp;max&amp;height=0&amp;width=125 1x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65548319&amp;max&amp;height=0&amp;width=250 2x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65548319&amp;max&amp;height=0&amp;width=375 3x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65548319&amp;max&amp;height=0&amp;width=375 4x">
+							</a>
+						<a href="http://rstyle.me/iA-n/b76g8ht2z6_" target="_blank" rel="nofollow" class="stp-product " data-index="5" style="margin: 0 12px 0 11px">
+				<span class="stp-help"></span>
+				<img src="//images.rewardstyle.com/img?v=2.13&amp;p=n_64887751&amp;max&amp;height=0&amp;width=125" srcset="//images.rewardstyle.com/img?v=2.13&amp;p=n_64887751&amp;max&amp;height=0&amp;width=125 1x, //images.rewardstyle.com/img?v=2.13&amp;p=n_64887751&amp;max&amp;height=0&amp;width=250 2x, //images.rewardstyle.com/img?v=2.13&amp;p=n_64887751&amp;max&amp;height=0&amp;width=375 3x, //images.rewardstyle.com/img?v=2.13&amp;p=n_64887751&amp;max&amp;height=0&amp;width=375 4x">
+							</a>
+						<a href="http://rstyle.me/iA-n/b7gq3mt2z6_" target="_blank" rel="nofollow" class="stp-product " data-index="6" style="margin: 0 12px 0 11px">
+				<span class="stp-help"></span>
+				<img src="//images.rewardstyle.com/img?v=2.13&amp;p=n_64174891&amp;max&amp;height=0&amp;width=125" srcset="//images.rewardstyle.com/img?v=2.13&amp;p=n_64174891&amp;max&amp;height=0&amp;width=125 1x, //images.rewardstyle.com/img?v=2.13&amp;p=n_64174891&amp;max&amp;height=0&amp;width=250 2x, //images.rewardstyle.com/img?v=2.13&amp;p=n_64174891&amp;max&amp;height=0&amp;width=375 3x, //images.rewardstyle.com/img?v=2.13&amp;p=n_64174891&amp;max&amp;height=0&amp;width=375 4x">
+							</a>
+						<a href="http://rstyle.me/iA-n/b8ztgvt2z6_" target="_blank" rel="nofollow" class="stp-product " data-index="7" style="margin: 0 12px 0 11px">
+				<span class="stp-help"></span>
+				<img src="//images.rewardstyle.com/img?v=2.13&amp;p=n_65782995&amp;max&amp;height=0&amp;width=125" srcset="//images.rewardstyle.com/img?v=2.13&amp;p=n_65782995&amp;max&amp;height=0&amp;width=125 1x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65782995&amp;max&amp;height=0&amp;width=250 2x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65782995&amp;max&amp;height=0&amp;width=375 3x, //images.rewardstyle.com/img?v=2.13&amp;p=n_65782995&amp;max&amp;height=0&amp;width=375 4x">
+							</a>
+						<a href="http://rstyle.me/~iA-978ak_" target="_blank" rel="nofollow" class="stp-product " data-index="8" style="margin: 0 12px 0 11px">
+				<span class="stp-help"></span>
+				<img src="//images.rewardstyle.com/img?v=2.13&amp;p=43c96606caa407c080699f41b4a9ccde&amp;max&amp;height=0&amp;width=125" srcset="//images.rewardstyle.com/img?v=2.13&amp;p=43c96606caa407c080699f41b4a9ccde&amp;max&amp;height=0&amp;width=125 1x, //images.rewardstyle.com/img?v=2.13&amp;p=43c96606caa407c080699f41b4a9ccde&amp;max&amp;height=0&amp;width=250 2x, //images.rewardstyle.com/img?v=2.13&amp;p=43c96606caa407c080699f41b4a9ccde&amp;max&amp;height=0&amp;width=375 3x, //images.rewardstyle.com/img?v=2.13&amp;p=43c96606caa407c080699f41b4a9ccde&amp;max&amp;height=0&amp;width=375 4x">
+							</a>
+						<a href="http://rstyle.me/iA-n/b68646t2z6_" target="_blank" rel="nofollow" class="stp-product " data-index="9" style="margin: 0 12px 0 11px">
+				<span class="stp-help"></span>
+				<img src="//images.rewardstyle.com/img?v=2.13&amp;p=n_63927132&amp;max&amp;height=0&amp;width=125" srcset="//images.rewardstyle.com/img?v=2.13&amp;p=n_63927132&amp;max&amp;height=0&amp;width=125 1x, //images.rewardstyle.com/img?v=2.13&amp;p=n_63927132&amp;max&amp;height=0&amp;width=250 2x, //images.rewardstyle.com/img?v=2.13&amp;p=n_63927132&amp;max&amp;height=0&amp;width=375 3x, //images.rewardstyle.com/img?v=2.13&amp;p=n_63927132&amp;max&amp;height=0&amp;width=375 4x">
+							</a>
+					</div>
+	</div>
+	<a class="stp-control stp-right">&gt;</a>
+</div>
+
+<style>
+#stp-586bd56bb0b78,
+#stp-586bd56bb0b78 div,
+#stp-586bd56bb0b78 a,
+#stp-586bd56bb0b78 img,
+#stp-586bd56bb0b78 span {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	letter-spacing: 0;
+	line-height: 0;
+	border: 0;
+	box-sizing: content-box;
+	background: transparent;
+	box-shadow: none;
+	word-wrap: normal;
+	float: none;
+	-webkit-transition: all 0 ease;
+	-moz-transition: all 0 ease;
+	-ms-transition: all 0 ease;
+	-o-transition: all 0 ease;
+	transition: all 0 ease;
+}
+#stp-586bd56bb0b78 {
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: left;
+}
+#stp-586bd56bb0b78.stp-no-controls {
+	text-align: center;
+}
+#stp-586bd56bb0b78 .stp-control {
+	z-index: 2;
+	display: inline-block;
+	width: 25px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: #FFF url(//assets.rewardstyle.com/images/scroller-arrows.png) no-repeat;
+	text-indent: -99999px;
+	overflow: hidden;
+	direction: ltr;
+	cursor: pointer;
+}
+#stp-586bd56bb0b78 .stp-left {
+	left: 0;
+	background-position: -26px 50%;
+}
+#stp-586bd56bb0b78 .stp-left:hover,
+#stp-586bd56bb0b78 .stp-left.stp-hover {
+	background-position: 0 50%;
+}
+#stp-586bd56bb0b78 .stp-right {
+	right: 0;
+	background-position: -49px 50%;
+}
+#stp-586bd56bb0b78 .stp-right:hover,
+#stp-586bd56bb0b78 .stp-right.stp-hover {
+	background-position: -75px 50%;
+}
+#stp-586bd56bb0b78 .stp-inner {
+	width: auto;
+	max-width: none;
+	margin: 0 auto;
+	display: inline-block;
+}
+#stp-586bd56bb0b78 .stp-slide {
+	width: auto;
+	left: 0;
+	position: relative;
+	white-space: nowrap;
+	-webkit-transition: left 0.3s ease;
+	-moz-transition: left 0.3s ease;
+	-ms-transition: left 0.3s ease;
+	-o-transition: left 0.3s ease;
+	transition: left 0.3s ease;
+}
+#stp-586bd56bb0b78 .stp-shift {
+	margin-left: 25px;
+}
+#stp-586bd56bb0b78 .stp-product {
+	width: 125px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	vertical-align: baseline;
+	white-space: nowrap;
+}
+#stp-586bd56bb0b78 img {
+	width: auto !important;
+	height: auto !important;
+	min-width: 15px !important;
+	min-height: 15px !important;
+	max-width: 125px !important;
+	max-height: 150px !important;
+	display: inline !important;
+	vertical-align: middle !important;
+	background: url(//assets.rewardstyle.com/images/search/350.gif) no-repeat 50% 50%;
+}
+#stp-586bd56bb0b78 span {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 8px 0 2px;
+	color:#000;
+	font:11px/11px 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, 'AppleGothic', sans-serif;
+}
+#stp-586bd56bb0b78 .stp-help {
+	width: 0;
+	display: inline-block;
+	min-height: 150px;
+	vertical-align: middle;
+	padding: 0;
+}
+#stp-586bd56bb0b78 .stp-hidden {
+	display: none;
+}
+#stp-586bd56bb0b78.stp-resp .stp-product {
+	width: 100%;
+}
+#stp-586bd56bb0b78.stp-resp img {
+	width: 100% !important;
+	height: auto !important;
+	max-width: none !important;
+	max-height: none !important;
+}
+#stp-586bd56bb0b78.stp-resp .stp-help {
+	min-height: 0;
+}
+</style>
+</div></div></div>
+		                    <div class="button-container text-center"><a href="http://www.theannaedit.com/shop/" class="btn-lined">View all</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section><script id="shopthepost-script" src="http://widgets.rewardstyle.com/js/shopthepost.js"></script>
+                            <!-- #favourites ends -->
+	<section id="videos" class="clearfix overflow">
+        <div class="container">
+            <div class="row the-carousel slick-initialized slick-slider"><div class="left-shade slick-arrow" style="display: block;"><button type="button" class="slick-prev">Previous</button></div>
+                            <div aria-live="polite" class="slick-list draggable" style="padding: 0px;"><div class="slick-track" style="opacity: 1; width: 2700px; transform: translate3d(-675px, 0px, 0px);"><div class="widget-1 widget-first widget-odd col-sm-3 slick-slide slick-cloned" style="width: 217px;" data-slick-index="-4" aria-hidden="true">			<div class="textwidget"><a href="https://www.youtube.com/watch?v=CU1WDroOppk" target="_blank" class="the-video"><img src="https://img.youtube.com/vi/CU1WDroOppk/mqdefault.jpg" alt=""><span class="caption"><span class="play-button"></span></span></a><!-- /.the-video --></div>
+		</div><div class="widget-2 widget-even col-sm-3 slick-slide slick-cloned" style="width: 217px;" data-slick-index="-3" aria-hidden="true">			<div class="textwidget"><a href="https://www.youtube.com/watch?v=pRopUBfxMzM" target="_blank" class="the-video"><img src="https://img.youtube.com/vi/pRopUBfxMzM/mqdefault.jpg" alt=""><span class="caption"><span class="play-button"></span></span></a><!-- /.the-video --></div>
+		</div><div class="widget-3 widget-odd col-sm-3 slick-slide slick-cloned" style="width: 217px;" data-slick-index="-2" aria-hidden="true">			<div class="textwidget"><a href="https://www.youtube.com/watch?v=fRA_1KCDUxE" target="_blank" class="the-video"><img src="https://img.youtube.com/vi/fRA_1KCDUxE/mqdefault.jpg" alt=""><span class="caption"><span class="play-button"></span></span></a><!-- /.the-video --></div>
+		</div><div class="widget-4 widget-last widget-even col-sm-3 slick-slide slick-cloned slick-active" style="width: 217px;" data-slick-index="-1" aria-hidden="false">			<div class="textwidget"><a href="https://www.youtube.com/watch?v=j8GRKx2hX5I" target="_blank" class="the-video"><img src="https://img.youtube.com/vi/j8GRKx2hX5I/mqdefault.jpg" alt=""><span class="caption"><span class="play-button"></span></span></a><!-- /.the-video --></div>
+		</div><div class="widget-1 widget-first widget-odd col-sm-3 slick-slide slick-current slick-active slick-center" style="width: 217px;" data-slick-index="0" aria-hidden="false">			<div class="textwidget"><a href="https://www.youtube.com/watch?v=CU1WDroOppk" target="_blank" class="the-video"><img src="https://img.youtube.com/vi/CU1WDroOppk/mqdefault.jpg" alt=""><span class="caption"><span class="play-button"></span></span></a><!-- /.the-video --></div>
+		</div><div class="widget-2 widget-even col-sm-3 slick-slide slick-active" style="width: 217px;" data-slick-index="1" aria-hidden="false">			<div class="textwidget"><a href="https://www.youtube.com/watch?v=pRopUBfxMzM" target="_blank" class="the-video"><img src="https://img.youtube.com/vi/pRopUBfxMzM/mqdefault.jpg" alt=""><span class="caption"><span class="play-button"></span></span></a><!-- /.the-video --></div>
+		</div><div class="widget-3 widget-odd col-sm-3 slick-slide" style="width: 217px;" data-slick-index="2" aria-hidden="true">			<div class="textwidget"><a href="https://www.youtube.com/watch?v=fRA_1KCDUxE" target="_blank" class="the-video"><img src="https://img.youtube.com/vi/fRA_1KCDUxE/mqdefault.jpg" alt=""><span class="caption"><span class="play-button"></span></span></a><!-- /.the-video --></div>
+		</div><div class="widget-4 widget-last widget-even col-sm-3 slick-slide" style="width: 217px;" data-slick-index="3" aria-hidden="true">			<div class="textwidget"><a href="https://www.youtube.com/watch?v=j8GRKx2hX5I" target="_blank" class="the-video"><img src="https://img.youtube.com/vi/j8GRKx2hX5I/mqdefault.jpg" alt=""><span class="caption"><span class="play-button"></span></span></a><!-- /.the-video --></div>
+		</div><div class="widget-1 widget-first widget-odd col-sm-3 slick-slide slick-cloned slick-center" style="width: 217px;" data-slick-index="4" aria-hidden="true">			<div class="textwidget"><a href="https://www.youtube.com/watch?v=CU1WDroOppk" target="_blank" class="the-video"><img src="https://img.youtube.com/vi/CU1WDroOppk/mqdefault.jpg" alt=""><span class="caption"><span class="play-button"></span></span></a><!-- /.the-video --></div>
+		</div><div class="widget-2 widget-even col-sm-3 slick-slide slick-cloned" style="width: 217px;" data-slick-index="5" aria-hidden="true">			<div class="textwidget"><a href="https://www.youtube.com/watch?v=pRopUBfxMzM" target="_blank" class="the-video"><img src="https://img.youtube.com/vi/pRopUBfxMzM/mqdefault.jpg" alt=""><span class="caption"><span class="play-button"></span></span></a><!-- /.the-video --></div>
+		</div><div class="widget-3 widget-odd col-sm-3 slick-slide slick-cloned" style="width: 217px;" data-slick-index="6" aria-hidden="true">			<div class="textwidget"><a href="https://www.youtube.com/watch?v=fRA_1KCDUxE" target="_blank" class="the-video"><img src="https://img.youtube.com/vi/fRA_1KCDUxE/mqdefault.jpg" alt=""><span class="caption"><span class="play-button"></span></span></a><!-- /.the-video --></div>
+		</div><div class="widget-4 widget-last widget-even col-sm-3 slick-slide slick-cloned" style="width: 217px;" data-slick-index="7" aria-hidden="true">			<div class="textwidget"><a href="https://www.youtube.com/watch?v=j8GRKx2hX5I" target="_blank" class="the-video"><img src="https://img.youtube.com/vi/j8GRKx2hX5I/mqdefault.jpg" alt=""><span class="caption"><span class="play-button"></span></span></a><!-- /.the-video --></div>
+		</div></div></div><div class="right-shade slick-arrow" style="display: block;"><button type="button" class="slick-next">Next</button></div></div>
+            <div class="row">
+                <div class="col-sm-12 text-right">
+                    <a href="https://www.youtube.com/user/ViviannaDoesMakeup" target="_blank" class="the-link">My Youtube channel <span class="icon-arrow_right"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #videos ends -->
+
+
+    <section id="instagram-box" class="widget-1 widget-first widget-last widget-odd clearfix overflow"><ul class="instagram-pics instagram-size-large"><li class=""><a href="//instagram.com/p/BPrm5QpBLAv/" target="_blank" class=""><img src="//scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c0.134.1080.1080/16230148_241291352981741_8871751319258398720_n.jpg?ig_cache_key=MTQzNTQxMTk2Njg5MzI3MzEzNQ%3D%3D.2.c" alt="Happy Birthday to my better half, @markonewton! 🎉😘🎂" title="Happy Birthday to my better half, @markonewton! 🎉😘🎂" class=""><span class="caption"><span class="the-btn">View Instagram</span></span></a></li><li class=""><a href="//instagram.com/p/BPqCL55Bnwh/" target="_blank" class=""><img src="//scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c0.134.1080.1080/16111066_1313715278687031_1989495578119110656_n.jpg?ig_cache_key=MTQzNDk2OTA0NTQzODIwMDg2NQ%3D%3D.2.c" alt="There's a mini bookcase tour and a look at my favourite reads on the blog today if you've always wanted to have a nose around our colour-sorted shelves... #VirgoVibes 📷 by @LaurenBrittonLoves" title="There's a mini bookcase tour and a look at my favourite reads on the blog today if you've always wanted to have a nose around our colour-sorted shelves... #VirgoVibes 📷 by @LaurenBrittonLoves" class=""><span class="caption"><span class="the-btn">View Instagram</span></span></a></li><li class=""><a href="//instagram.com/p/BPnXrnOhrX6/" target="_blank" class=""><img src="//scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c0.134.1080.1080/16230731_230347864040934_7609024375819337728_n.jpg?ig_cache_key=MTQzNDIxOTE1ODQ2NzY4NzkzMA%3D%3D.2.c" alt="Back to the grind with a fully-packed shoot day with @LaurenBrittonLoves, followed by my first gym session in two weeks with @pmptfitness. HOLD ME." title="Back to the grind with a fully-packed shoot day with @LaurenBrittonLoves, followed by my first gym session in two weeks with @pmptfitness. HOLD ME." class=""><span class="caption"><span class="the-btn">View Instagram</span></span></a></li><li class=""><a href="//instagram.com/p/BPcYr4pBdbZ/" target="_blank" class=""><img src="//scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/15803363_1721849741370742_4510449266983960576_n.jpg?ig_cache_key=MTQzMTEyNzM1MDQ2ODUzMTkyOQ%3D%3D.2" alt="Here's a couple of my cruise essentials (minus the motion sickness pills) and if you want to see what my sister and I got up to whilst we were away then the @waltdisneyworld vlog is LIVE. Link in my bio 👆#UltimateDisney" title="Here's a couple of my cruise essentials (minus the motion sickness pills) and if you want to see what my sister and I got up to whilst we were away then the @waltdisneyworld vlog is LIVE. Link in my bio 👆#UltimateDisney" class=""><span class="caption"><span class="the-btn">View Instagram</span></span></a></li><li class=""><a href="//instagram.com/p/BPUykQzBubw/" target="_blank" class=""><img src="//scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c0.96.1080.1080/16110205_239153789863458_5511898489220497408_n.jpg?ig_cache_key=MTQyODk4OTM3NjA0NTk2NzA4OA%3D%3D.2.c" alt="I found my perfect Mickey Mouse ears! Thanks for letting me borrow your pair @sanj_says and @dsharples81 😘 #UltimateDisney" title="I found my perfect Mickey Mouse ears! Thanks for letting me borrow your pair @sanj_says and @dsharples81 😘 #UltimateDisney" class=""><span class="caption"><span class="the-btn">View Instagram</span></span></a></li><li class=""><a href="//instagram.com/p/BPTNWcyBeQ6/" target="_blank" class=""><img src="//scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c0.132.1080.1080/15876873_1175966319184234_3534789064207106048_n.jpg?ig_cache_key=MTQyODU0NDIyNDE0MzcyOTcyMg%3D%3D.2.c" alt="It's the final night of our three-day @waltdisneyworld Dream Cruise and I'm feeling thankful for an AMAZING trip, new friends and travel-sickness pills. 🙌 #UltimateDisney" title="It's the final night of our three-day @waltdisneyworld Dream Cruise and I'm feeling thankful for an AMAZING trip, new friends and travel-sickness pills. 🙌 #UltimateDisney" class=""><span class="caption"><span class="the-btn">View Instagram</span></span></a></li></ul></section>
+
+    <section id="footer" class="clearfix overflow">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <ul id="footer-menu-desktop" class="footer-menu"><li class="go-top hidden-xs hidden-sm menu-item menu-item-type-custom menu-item-object-custom menu-item-19632"><a href="#"><span class="icon-arrow_up"></span> Back to the top</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19636"><a href="http://www.theannaedit.com/about/">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19633"><a href="http://www.theannaedit.com/shop/">SHOP</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19635"><a href="http://www.theannaedit.com/contact/">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19634"><a href="http://www.theannaedit.com/disclaimer/">Disclaimer</a></li>
+<li class="go-top visible-xs menu-item menu-item-type-custom menu-item-object-custom menu-item-19637"><a href="#"><span class="icon-arrow_up"></span> Back to the top</a></li>
+<li id="magic-line-footer" style="width: 122px; left: 0px;"></li></ul>                </div>
+                <div class="col-md-5">
+                    <div class="hidden-xs">
+                        <ul id="socialmedia-menu-desktop" class="socialmedia-menu"><li id="menu-item-19638" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19638"><a href="http://www.youtube.com/theannaedit"><span class="icon-i_youtube_1"></span></a></li>
+<li id="menu-item-19639" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19639"><a href="https://www.snapchat.com/add/theannaedit"><span class="icon-i_snapchat"></span></a></li>
+<li id="menu-item-19640" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19640"><a href="https://www.instagram.com/theannaedit/"><span class="icon-i_instagram"></span></a></li>
+<li id="menu-item-19641" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19641"><a href="https://www.facebook.com/theannaedit"><span class="icon-i_facebook"></span></a></li>
+<li id="menu-item-19642" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19642"><a href="https://twitter.com/theannaedit"><span class="icon-i_twitter"></span></a></li>
+<li id="menu-item-19643" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19643"><a href="https://pinterest.com/theannaedit/"><span class="icon-i_pinterest"></span></a></li>
+<li id="menu-item-19644" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19644"><a href="https://www.bloglovin.com/blogs/vivianna-does-makeup-1775978"><span class="icon-i_bloglovin"></span></a></li>
+</ul>                        
+                        
+                    </div>
+                    
+                    <div class="visible-xs">
+                        <ul id="socialmedia-menu-1-footer-mobile" class="socialmedia-menu-1"><li id="menu-item-19652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19652"><a href="http://www.youtube.com/theannaedit"><span class="icon-i_youtube_1"></span></a></li>
+<li id="menu-item-19653" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19653"><a href="https://www.snapchat.com/add/theannaedit"><span class="icon-i_snapchat"></span></a></li>
+<li id="menu-item-19654" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19654"><a href="https://www.instagram.com/theannaedit/"><span class="icon-i_instagram"></span></a></li>
+<li id="menu-item-19655" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19655"><a href="https://www.facebook.com/theannaedit"><span class="icon-i_facebook"></span></a></li>
+</ul>
+                        <ul id="socialmedia-menu-2-footer-mobile" class="socialmedia-menu-2"><li id="menu-item-19656" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19656"><a href="https://twitter.com/theannaedit"><span class="icon-i_twitter"></span></a></li>
+<li id="menu-item-19657" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19657"><a href="https://pinterest.com/theannaedit/"><span class="icon-i_pinterest"></span></a></li>
+<li id="menu-item-19658" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19658"><a href="https://www.bloglovin.com/blogs/vivianna-does-makeup-1775978"><span class="icon-i_bloglovin"></span></a></li>
+</ul>                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="copyright">
+                        © The Anna Edit.<br> All Rights Reserved. <a href="http://www.smukkeberg.com" target="_blank">Designed by smukkeberg</a>.
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- /#footer ends -->
+	        <script type="text/javascript">
+        // <![CDATA[
+        var disqus_shortname = 'viviannadoesmakeup';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1 && nodes[i].parentNode.tagName == 'A') {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) { url = url[0]; }
+                    else { url = url[1]; }
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        // ]]>
+        </script>
+        <script type="text/javascript" src="http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/js/bootstrap.min.js?ver=4.6.1"></script>
+<script type="text/javascript" src="http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/js/slick/slick.min.js?ver=4.6.1"></script>
+<script type="text/javascript" src="http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/js/custom.js?ver=4.6.1"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var pbd_alp = {"startPage":"1","maxPages":"250","nextLink":"http:\/\/www.theannaedit.com\/page\/2\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.theannaedit.com/wp-content/themes/theannaedit-smukkeberg/js/load-posts.js?ver=1.0"></script>
+<script type="text/javascript" src="http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201704"></script>
+<script type="text/javascript" src="http://www.theannaedit.com/wp-includes/js/wp-embed.min.js?ver=4.6.1"></script>
+
+<!--Plugin WP Missed Schedule Active - Secured with Genuine Authenticity KeyTag-->
+
+<!-- This site is patched against a big problem not solved since WordPress 2.5 -->
+
+<script type="text/javascript" src="http://stats.wp.com/e-201704.js" async="" defer=""></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.3.2',blog:'50367489',post:'0',tz:'0',srv:'www.theannaedit.com'} ]);
+	_stq.push([ 'clickTrackerInit', '50367489', '0' ]);
+</script>
+
+	<!-- Don't forget analytics -->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"37d2807496","applicationID":"4851522","transactionName":"ZFxbZURZV0MDU0RZDF0WbENfF05AT1leVAZLFEtUUlFKHhJYQA==","queueTime":0,"applicationTime":0,"atts":"SBtYEwxDRE0=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+
+<img src="http://pixel.wp.com/g.gif?v=ext&amp;j=1%3A4.3.2&amp;blog=50367489&amp;post=0&amp;tz=0&amp;srv=www.theannaedit.com&amp;host=www.theannaedit.com&amp;ref=http%3A%2F%2Fwww.smukkeberg.com%2Fthe-anna-edit%2F&amp;rand=0.5811025480072838" alt=":)" width="6" height="5" id="wpstats"></body></html>
