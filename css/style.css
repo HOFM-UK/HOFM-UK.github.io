@@ -560,7 +560,7 @@ body {
 	background-color: #efece2;
 	background-image: url(../images/bg-body.png);
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 }
