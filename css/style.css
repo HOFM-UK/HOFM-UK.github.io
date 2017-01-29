@@ -560,9 +560,9 @@ body {
 	background-color: #efece2;
 	background-image: url(../images/bg-body.png);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: auto;
 	background-attachment: fixed;
-	background-position: centre;
+	background-position: center;
 }
 
 body.text-1 {font-family: Arial;}
