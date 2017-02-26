@@ -562,7 +562,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: 25% 25%;
 }
 
 body.text-1 {font-family: Arial;}
