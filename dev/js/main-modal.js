@@ -1,13 +1,7 @@
 jQuery(document).ready(function($){
-	var formModal = $('.cd-user-modal'),
-		formLogin = formModal.find('#cd-login'),
-		formSignup = formModal.find('#cd-signup'),
-		formForgotPassword = formModal.find('#cd-reset-password'),
-		formModalTab = $('.cd-switcher'),
-		tabLogin = formModalTab.children('li').eq(0).children('a'),
-		tabSignup = formModalTab.children('li').eq(1).children('a'),
-		forgotPasswordLink = formLogin.find('.cd-form-bottom-message a'),
-		backToLoginLink = formForgotPassword.find('.cd-form-bottom-message a'),
+	var formModal = $('.contact-modal'),
+		formContact = formModal.find('#contact-form'),
+		formprayer = formModal.find('#contact-prayer'),
 		mainNav = $('.main-nav');
 
 	//open modal
@@ -16,13 +10,13 @@ jQuery(document).ready(function($){
 	});
 
 	//open sign-up form
-	mainNav.on('click', '.cd-signup', signup_selected);
+	mainNav.on('click', '.contact-form', getContactForm);
 	//open login-form form
-	mainNav.on('click', '.cd-signin', login_selected);
+	mainNav.on('click', '.contact-enquiry', login_selected);
 
 	//close modal
 	formModal.on('click', function(event){
-		if( $(event.target).is(formModal) || $(event.target).is('.cd-close-form') ) {
+		if( $(event.target).is(formModal) || $(event.target).is('.contact-close-form') ) {
 			formModal.removeClass('is-visible');
 		}	
 	});
@@ -36,19 +30,9 @@ jQuery(document).ready(function($){
 	//switch from a tab to another
 	formModalTab.on('click', function(event) {
 		event.preventDefault();
-		( $(event.target).is( tabLogin ) ) ? login_selected() : signup_selected();
+		( $(event.target).is( tabLogin ) ) ? login_selected() : getContactForm();
 	});
 
-	//hide or show password
-	$('.hide-password').on('click', function(){
-		var togglePass= $(this),
-			passwordField = togglePass.prev('input');
-		
-		( 'password' == passwordField.attr('type') ) ? passwordField.attr('type', 'text') : passwordField.attr('type', 'password');
-		( 'Hide' == togglePass.text() ) ? togglePass.text('Show') : togglePass.text('Hide');
-		//focus and move cursor to the end of input field
-		passwordField.putCursorAtEnd();
-	});
 
 	//show forgot-password form 
 	forgotPasswordLink.on('click', function(event){
@@ -65,37 +49,37 @@ jQuery(document).ready(function($){
 	function login_selected(){
 		mainNav.children('ul').removeClass('is-visible');
 		formModal.addClass('is-visible');
-		formLogin.addClass('is-selected');
-		formSignup.removeClass('is-selected');
+		formContact.addClass('is-selected');
+		formprayer.removeClass('is-selected');
 		formForgotPassword.removeClass('is-selected');
 		tabLogin.addClass('selected');
-		tabSignup.removeClass('selected');
+		tabprayer.removeClass('selected');
 	}
 
-	function signup_selected(){
+	function getContactForm(){
 		mainNav.children('ul').removeClass('is-visible');
 		formModal.addClass('is-visible');
-		formLogin.removeClass('is-selected');
-		formSignup.addClass('is-selected');
+		formContact.removeClass('is-selected');
+		formprayer.addClass('is-selected');
 		formForgotPassword.removeClass('is-selected');
 		tabLogin.removeClass('selected');
-		tabSignup.addClass('selected');
+		tabprayer.addClass('selected');
 	}
 
 	function forgot_password_selected(){
-		formLogin.removeClass('is-selected');
-		formSignup.removeClass('is-selected');
+		formContact.removeClass('is-selected');
+		formprayer.removeClass('is-selected');
 		formForgotPassword.addClass('is-selected');
 	}
 
 	//REMOVE THIS - it's just to show error messages 
-	formLogin.find('input[type="submit"]').on('click', function(event){
+	formContact.find('input[type="submit"]').on('click', function(event){
 		event.preventDefault();
-		formLogin.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
+		formContact.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
 	});
-	formSignup.find('input[type="submit"]').on('click', function(event){
+	formprayer.find('input[type="submit"]').on('click', function(event){
 		event.preventDefault();
-		formSignup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
+		formprayer.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
 	});
 
 
