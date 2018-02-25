@@ -61,6 +61,29 @@ jQuery(document).ready(function($) {
 	})();
 
 	/* end Main Navigation */
+
+
+		
+	/* ---------------------------------------------------------------------- */
+	/*	Send Email
+	/* ---------------------------------------------------------------------- */
+
+	function sendEmail() {
+    var link = "mailto:olamidek@gmail.com"
+             //+ "?cc=myCCaddress@example.com"
+             + "&subject=" + escape("Website Email")
+             + "&body=" + escape(document.getElementById('message').value)
+             			+ escape(document.getElementById('name').value)
+             			+ escape(document.getElementById('email').value)
+    ;
+
+    window.location.href = link;
+}
+
+
+	/* end Send Email */
+
+
 		
 	/* ---------------------------------------------------------------------- */
 	/*	Revolution Slider

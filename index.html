@@ -281,25 +281,26 @@
 
 					<span id="alert" style="color: #FF0000; font-size: 1.2em; font-weight: bold;"></span>
 
-					<form action="index.html#alert" method="post"> <!-- Modify URl later 07/06/2016 -->
+					<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScIhpFOJspwGxOzLxVOE9kY0mwm1Po_Kkxx7guEHHSOP-_xMg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> <!-- Modify URl later 07/06/2016 -->
 						
 						<p class="input-block">
 							<label>Name:</label>
-							<input type="text" name="name" id="name" class="required" size="35" value=""/>
+							<input type="text" name="entry.2005620554" id="name" class="required" size="35" value=""/>
 						</p>
 						<p class="input-block">
 							<label>E-mail:</label>
-							<input type="text" name="email" id="email" class="required email" value=""/>
+							<input type="text" name="entry.1045781291" id="email" class="required email" value=""/>
 						</p>
 						<p class="input-block">
 							<label>Message:</label>
-							<textarea name="message" rows="5" cols="20" id="message" class="required"></textarea>
+							<textarea name="entry.839337160" rows="5" cols="20" id="message" class="required"></textarea>
 						</p>
-						
-						<p><button class="button orange small" type="submit" name="submit">Send Request</button></p>
+
+						<p><button class="button orange small" type="submit" name="sendRequest" onclick="SendEmail();">Send Request</button></p>
 						
 					</form>
-										
+					
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>				
 				</div><!--/ .widget-->
 				
 			</div><!--/ .one-third-->
@@ -439,6 +440,8 @@
 <![endif]-->
 <script src="js/respond.min.js"></script>
 
+
+
  <!-- JQUERY -->	
 <script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>			
 <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>	
@@ -455,6 +458,14 @@
 <script src="js/jflickrfeed.min.js"></script>
 
 <script src="js/jquery.isotope.min.js"></script>
+
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
 
 </body>
 </html>
