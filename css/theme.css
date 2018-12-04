@@ -417,6 +417,13 @@ p.lead {
   font-weight: 400;
   line-height: 28px;
 }
+p.leadBlog {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
 .sub {
   font-size: 12px;
 }
